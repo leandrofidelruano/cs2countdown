@@ -9,7 +9,6 @@
     <title>CS2 DROPS</title>
 </head>
 <body>
-
   <h1>Counter Strike 2 <br> countdown:</h1>
   <div id="countdown-container">
       <div id="countdown"></div>
@@ -79,7 +78,7 @@
              // Actualiza la barra de progreso
             const progressBarFill = document.getElementById('progress-bar-fill');
             const totalSeconds = timeRemaining.days * 24 * 60 * 60 + timeRemaining.hours * 60 * 60 + timeRemaining.minutes * 60 + timeRemaining.seconds;
-            const progressPercentage = (totalSeconds / (7 * 24 * 60 * 60)) * 100; // 7 días en segundos
+            const progressPercentage = ((7 * 24 * 60 * 60) - totalSeconds) / (7 * 24 * 60 * 60) * 100;
             progressBarFill.style.width = `${progressPercentage}%`;
             const percentage = Math.min(100, Math.floor(progressPercentage));
             document.getElementById("percentage").innerHTML = `${percentage}%`;
