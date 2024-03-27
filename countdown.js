@@ -4,7 +4,7 @@ function getNextTuesday() {
 
       const nextTuesday = new Date(now);
       nextTuesday.setDate(now.getDate() + daysUntilNextTuesday);
-      nextTuesday.setHours(23, 0, 0, 0); // 23:00hs
+      nextTuesday.setHours(22, 0, 0, 0); // 22:00hs
 
       return nextTuesday;
     }
