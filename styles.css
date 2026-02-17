@@ -202,3 +202,13 @@ h1 {
     h1 { font-size: 1.3rem; }
     #labels > div { width: 52px; font-size: 0.65rem; }
 }
+
+::selection {
+    background-color: #ff6a00;
+    color: #ffffff;
+}
+
+::-moz-selection {
+    background-color: #ff6a00;
+    color: #ffffff;
+}
